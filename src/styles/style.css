@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  background: #91cef2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: none;
+  text-transform: uppercase;
+  background: #ff6672;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+nav a:hover {
+  background: #b93c2f;
+  border-radius: 50%;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  margin-top: 10px;
+  background: #e3e4ef;
+  padding: 20px;
+  width: 80%;
+  position: relative;
+  padding-left: 140px;
+}
+.message strong {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  background: #313360;
+  color: #fff;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+}
+.messageSession {
+  background: #27ae60;
+  color: #fff;
+  align-self: flex-end;
+}
+.tchatForm {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tchatForm input[type="submit"] {
+  background: #1abc9c;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+}
+.tchatForm textarea {
+  border: 1px solid #1abc9c;
+  font-size: 1.6rem;
+  outline: none;
+  padding: 10px;
+  height: 300px;
+}

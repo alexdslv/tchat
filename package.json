@@ -1,0 +1,12 @@
+{
+  "name": "tchat-php",
+  "version": "1.0.0",
+  "description": "Database structure : pseudo message",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch src/styles/style.scss:dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
