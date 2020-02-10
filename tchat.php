@@ -54,7 +54,7 @@ if(!isset($_SESSION["pseudo"])){
             <strong><?= $result["pseudo"] ?>:</strong>
             <span><?= $result["message"] ?></span>
             <span>(<?= $result["likes"] ?>)</span>
-            <a class="addlLike" data-id="<?= $result["id"] ?>" href="functions/addLikes.php?id=<?= $result["id"] ?>">Like</a>
+            <a class="addlLike" data-id="<?= $result["id"] ?>" href="functions/addLike.php?id=<?= $result["id"] ?>">Like</a>
         </div>
     <?php
     }

@@ -15,8 +15,9 @@ $nbLikes =  $req->fetch();
 $nbLikes  = intval($nbLikes[0]) + 1;
 
 $req2 = $db->prepare("UPDATE users_messages SET likes = :likes WHERE id = :id");
+$req2->bindParam(":id", $_GET["id"]);
 $req2->bindParam(":likes", $nbLikes);
-$req2->bindParam(":id", $id);
 $req2->execute();
 
-header("Location: ../tchat.php");
+
+//header("Location: ../tchat.php");
