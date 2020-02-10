@@ -54,7 +54,7 @@ if(!isset($_SESSION["pseudo"])){
             <strong><?= $result["pseudo"] ?>:</strong>
             <span><?= $result["message"] ?></span>
             <span>(<?= $result["likes"] ?>)</span>
-            <a href="functions/addLIke.php?id=<?= $result["id"] ?>">Like</a>
+            <a class="addlLike" data-id="<?= $result["id"] ?>" href="functions/addLikes.php?id=<?= $result["id"] ?>">Like</a>
         </div>
     <?php
     }
@@ -64,6 +64,10 @@ if(!isset($_SESSION["pseudo"])){
         <textarea name="message"></textarea>
         <input type="submit" value="Envoyer">
     </form>
-
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
